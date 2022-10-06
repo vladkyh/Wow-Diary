@@ -1,0 +1,233 @@
+
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    
+    font-family: fallout, serifs;
+    min-height: 100%;
+    font-size: 22px;
+}
+.pr2{
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.pr3{
+    padding-right: 63px;
+    padding-left: 63px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.pr4{
+    padding-right: 73px;
+    padding-left: 73px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.pl2{
+    padding-right: 30px;
+}
+
+.main {
+    
+   background-image: url();
+   background-size: 100% 100% ;
+   background-position: center center;
+    padding-top: 90px;
+    
+    padding-bottom: 220px;
+    background-color: #79bb3b7e;
+}
+
+.user__body{
+   
+   background-color: black;
+   border-radius: 100px;
+   padding: 40px;
+
+}
+
+
+
+.user__title {
+    padding-top: 30px;
+}
+
+
+.user__title1 {
+    transition: 1s;
+}
+.user__title2 {
+}
+.user__title1:hover{
+    transition: 0.4s;
+    border-bottom: 1px solid white;
+    
+}
+    
+
+.user__state {
+    margin-bottom: 20px;
+}
+.user__strench{
+    color: rgb(207, 5, 5) ;
+    border: 1px solid red;
+}
+.user__dexterity{
+    color: rgb(218, 218, 5) ;
+    border: 1px solid rgb(218, 218, 5);
+}
+.user__intelligence{
+    color: rgb(29, 204, 204) ;
+    border: 1px solid rgb(29, 204, 204);
+}
+
+.user__strench:hover {
+    color: rgb(255, 255, 255);
+    
+    background-color: rgb(202, 13, 13);
+}
+.user__dexterity:hover {
+    color: black;
+    
+    background-color: #ffc107;
+}
+.user__intelligence:hover {
+    color: white;
+    
+    background-color: #0dcaf0;
+}
+.user__level {
+}
+
+.user__str:focus{color: red;}
+.user__dex:hover{
+    color: yellow;
+}
+.user__int:hover{
+    color: aqua;
+}
+
+.user__op__str{display: none; transition: 0.4s ease-in-out;}
+.user__op__dex{display: none; transition: 0.4s ease-in-out;}
+.user__op__int{display: none; transition: 0.4s ease-in-out;}
+.user__op__active{display: block; transition: 0.4s ease-in-out;}
+
+
+
+
+.user__info {
+    
+}
+.user__input__btn{
+    margin-top: 10px;
+}
+
+.user__img {
+}
+.user__text {
+    border-top: 1px solid white;
+    margin-top: 5px;
+    padding-top: 15px;
+    min-height: 214px;
+}
+.user__img{
+    /* background-image: url(../img/shvarz.png); */
+    
+    /* background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat; */
+    
+}
+.user__img__str{
+    
+    background-color: rgb(255, 0, 0);
+    
+    width: 300px;
+    height: 300px;
+
+}
+
+.user__img__dex{
+    background-color: rgb(238, 255, 0);
+    
+    width: 300px;
+    height: 300px;
+
+}
+.user__img__int{
+
+    background-color: rgb(0, 252, 252);
+    
+    width: 300px;
+    height: 300px;
+}
+
+/* .counter {
+}
+.counter__btn {
+    color: white;
+    background-color: black;
+} */
+.counter__value {
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border: 0px;
+    min-width: 10px;
+    max-width: 170px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+
+
+
+.counter__strong{
+    color: red;
+}
+.counter__strong:focus{
+    outline: 2px solid rgb(192, 11, 11);
+    
+    /* background-color: rgb(202, 13, 13, 0.7);
+    color: white;
+    transition: 0.3 ease-in-out; */
+}
+
+.counter__strong::placeholder {
+    color: rgb(207, 18, 18); opacity: 0.7;
+}
+/* .counter__strong:focus::placeholder{
+    
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    
+    
+} */
+
+
+
+.counter__dex{
+    color: rgb(192, 177, 11);
+}
+.counter__dex::placeholder {color: rgb(192, 177, 11); opacity: 0.7;}
+.counter__dex:focus{
+    outline: 2px solid rgb(192, 177, 11);
+}
+
+.counter__int{
+    color: rgb(29, 204, 204);
+}
+.counter__int::placeholder {color: rgb(29, 204, 204); opacity: 0.7;}
+.counter__int:focus{
+    outline: 2px solid rgb(29, 204, 204);
+}
+
+/* color: rgb(29, 204, 204); */
+

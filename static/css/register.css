@@ -1,0 +1,7 @@
+.red{
+    color: red;
+}
+.form__error{
+    border: 1px solid red;
+    padding: 9px;
+}

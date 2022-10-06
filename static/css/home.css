@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fallout ,serif;
+    background: rgb(205,254,194);
+background: linear-gradient(0deg, rgba(205,254,194,1) 9%, rgba(255,255,255,1) 91%);
+
+background-repeat: no-repeat;
+}
+.main {
+    margin-top: 100px;
+    margin-bottom: 200px;
+    
+}
+.ml2{
+    margin-left: 20px;
+}
+
+.home__body {
+    margin-bottom: 90px;
+   
+}
+
+.home__title {
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.home__h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+.home__h2 {
+    margin-bottom: 20px;
+}
+.home__melkii {
+    font-weight: 800;
+    color: rgb(61, 61, 61, 0.6);
+    margin-bottom: 30px;
+}
+
+
+
+
+
+.car__body {
+    text-align: center;
+    justify-content: center;
+}
+.car__title {
+    font-weight: 1000;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.car__title1 {
+    font-weight: 500;
+    font-size: 20px;
+}
+.car__text{
+    font-size: 23px;
+    font-weight: 700;
+}
+.car__img{
+    max-height: 400px;
+}
+
+
+
+
+
+.reg__title {
+    font-weight: 1000;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.reg__h2 {
+    font-size: 19px;
+    font-weight: 800;
+    color: rgb(61, 61, 61, 0.6);
+    margin-bottom: 25px;
+}
+
+
+
+
+
+/* ФОрмы */
+.section-form{
+   
+    
+}
+.form-h2{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(61, 61, 61, 0.9);
+    
+    
+}
+.reg{
+    margin-top: 60px;
+}
+.reg__form{
+    margin-top: 60px;
+}
+.formtxt{
+    
+    padding: 0 30px;
+    border-radius: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    color: black;
+    height: 60px;
+    
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: border-color 1.15s ease-in-out, box-shadow 1.15s ease-in-out;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    
+
+}
+
+.formbut{
+    
+    margin-top: 23px;
+    margin-right: 20px;
+    border-radius: 30px;
+    height: 45px;
+    min-width: 290px;
+    max-width: 390px;
+    background-color: rgb(25,135,84);
+    color: white;
+    border: 1px solid rgb(25,135,84);
+    font-size: 19px;
+    
+
+}
+.br30{
+border-radius: 30px;
+font-size: 19px;
+}
+.form__line{
+    
+}
+.form-ds{
+    padding-top: 61px;
+}

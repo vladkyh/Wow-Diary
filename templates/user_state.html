@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/img/fallout.5bade80db56f0ef2fbd3.ttf">
+    <title>user__state</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="header__body justify-content-between d-flex align-content-center ">
+                    <nav class="header__menu">
+                        <ul class="header__list ">
+                            <li class="header__li"><a class="header__link" href="login.html">Home</a></li>
+                            <li class="header__li"><a class="header__link" href="user_state.html">State</a></li>
+                            <li class="header__li"><a class="header__link" href="diary.html">Diary</a></li>
+                            
+                            
+                        </ul>
+                    </nav>
+                    <div class="header__user__info d-flex align-items-center ">
+                      <button type="button" class="btn btn-dark ">Login</button>
+                      <a href="reg.html"><button type="button" class="btn btn-dark ">Reg</button></a>
+                      <h4 class="user__name">Имя</h4>
+                      <div class="user__img"></div>
+                      
+                      <form th:action="@{/logout}" method="post">
+                        <input type="submit" value="Sign Out" class="btn btn-outline-danger user__btn"/>
+                        
+                      
+                        </form>
+
+                  </div>
+                    <div class="header__burger"><span class="burger__pol"></span></div>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+    <main class="main ">
+        <div class="container">
+            <div class="user__body">
+                <div class="row">
+                    <div class="user__title d-flex justify-content-between mb-5">
+                        <div class="user__title1">STATS</div>
+                        <div class="user__title2">LVL:1</div>
+                        <!-- бебр лвл -->
+                    </div>
+                </div>
+                <div class="row d-flex">
+                        
+                            <div class="accordion bg-black col-md-4 col-12 mb-3" id="accordionExample">
+                            <div class="acord__body ">
+                              <div class="accordion-item mb-1 ">
+                                <h2 class="accordion-header" id="headingOne">
+                                  <button class=" accordion-button collapsed  user__strench" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Strong
+                                  </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                  <!-- с помощью class 'show' по умолчанию октрывается один из айтемов аккорд. -->
+                                  <div class="accordion-body">
+                                    <strong class="d-block">Ваша текущая сила: 5</strong>
+                                    <form method="post">
+                                      
+                                      
+                                      <div class="user__input__number">
+                                        
+                                        <input type="number" name="push-ups" placeholder="Push-ups" value="" class=" counter__value counter__strong">
+                                        <input type="number" name="pull - ups" placeholder="Pull - ups" value="" class=" counter__value counter__strong">
+                                        <input type="number" name="bars" placeholder="Bars" value="" class=" counter__value counter__strong">
+                                        <input type="number" name="squats" placeholder="Squats" value="" class=" counter__value counter__strong">
+                                        
+
+                                      </div>
+  
+                                      
+                                      <input type="hidden"><button type="submit" class="user__input__btn d-block btn btn-danger">Отправить</button></input>
+                                    </form>
+                                  
+                                     <!--бебр показатель силы  -->
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item mb-1">
+                                <h2 class="accordion-header" id="headingTwo">
+                                  <button class="accordion-button collapsed  justify-content-between mb-0 user__dexterity" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Dexterity
+                                  </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    <strong class="d-block">Ваша текущая ловкость: 5</strong> 
+                                    <form method="post"> 
+                                      <div class="user__input__number">
+                                        
+                                        <input type="number" name="stretching" placeholder="Stretching, min" value="" class=" counter__value counter__dex">
+                                        <input type="number" name="run" placeholder="Running, km" value="" class=" counter__value counter__dex">
+                                        <input type="number" name="swimming" placeholder="Swimming, min" value="" class=" counter__value counter__dex">
+                                        
+                                        
+
+                                      </div>
+                                    <input type="hidden"><button type="submit" class="user__input__btn d-block btn btn-warning">Отправить</button></input>
+                                    </form>
+                                    <!-- бебр ловкость -->
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                  <button class="accordion-button collapsed  justify-content-between mb-0 user__intelligence" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Intelligence
+                                  </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    <strong class="d-block">Ваш текущий интеллект: 5</strong> 
+                                    <form method="post">
+                                      <div class="user__input__number">
+                                        
+                                        <input type="number" name="pages" placeholder="Pages read" value="" class=" counter__value counter__int">
+                                        <input type="number" name="materials" placeholder="Viewed materials" value="" class=" counter__value counter__int">
+                                        <input type="number" name="practic" placeholder="Practice, hours" value="" class=" counter__value counter__int">
+                                        
+                                        
+
+                                      </div>
+                                      <input type="hidden"><button type="submit" class="d-block user__input__btn btn btn-info">Отправить</button></input>
+                                    </form>
+                                    <!-- бебр интелл -->
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-12">
+                             <div id="strong" class="user__info user__op__str  offset-1 user__op__active ">
+                               <div class=" user__img__str offset-lg-2 offset-0"></div>
+                               <div class="user__text">Сила показывает ваши физические возможности. От нее зависит, какой груз вы можете нести; она же определяет эффективность ближнего боя. Навыки: Ближний бой (Холодное оружие?)-навык "ближний бой" определяет, насколько эффективно ты можешь пользоваться оружием ближнего боя-от свинцовой трубы до высокотехнологичной суперкувалды.</div>
+                           </div>
+                           <div id="dexter" class="user__info user__op__dex  offset-1 ">
+                             <div class=" user__img__dex offset-lg-2 offset-0 "></div>
+                             <div class="user__text">Ловкость важна для любого активного персонажа. Влияет на количество очков действия, класс брони и многие навыки.</div>
+                         </div>
+                         <div id="intel" class="user__info user__op__int  offset-1 ">
+                           <div class=" user__img__int offset-lg-2 offset-0 "></div>
+                           <div class="user__text">Знания, мудрость и способность быстро принимать решения. Показатель интеллекта важен для любого персонажа. Влияет на количество очков навыков, получаемых на каждом уровне, содержание диалогов и многие навыки.</div>
+                            </div>
+                        </div>
+                    
+                    
+                    
+                
+            
+        </div>
+            </div>
+        </div>
+    </main>
+
+<!-- <button class="counter__btn" data-direction="minus">-</button> -->
+                                        <!-- <button class="counter__btn" data-direction="plus">+</button> -->
+
+
+
+
+
+
+
+
+    
+
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+      
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022:
+          <a class="text-white" href="https://mdbootstrap.com/">Web Dev</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+</body>
+<script src="../static/js/bootstrap.bundle.js"></script>
+<script src="../static/js/header.js"></script>
+<script src="../static/js/user__state.js"></script>
+</html>

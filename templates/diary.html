@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/diary.css">
+    <link rel="stylesheet" href="../static/img/fallout.5bade80db56f0ef2fbd3.ttf">
+    <title>user__state</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="header__body justify-content-between d-flex align-content-center ">
+                    <nav class="header__menu">
+                        <ul class="header__list ">
+                            <li class="header__li"><a class="header__link" href="login.html">Home</a></li>
+                            <li class="header__li"><a class="header__link" href="user_state.html">State</a></li>
+                            <li class="header__li"><a class="header__link" href="diary.html">Diary</a></li>
+                            
+                        </ul>
+                    </nav>
+                    <div class="header__user__info d-flex align-items-center ">
+                      <button type="button" class="btn btn-dark ">Login</button>
+                      <a href="reg.html"><button type="button" class="btn btn-dark ">Reg</button></a>
+                      <h4 class="user__name">Имя</h4>
+                      <div class="user__img"></div>
+                      
+                      <form th:action="@{/logout}" method="post">
+                        <input type="submit" value="Sign Out" class="btn btn-outline-danger user__btn"/>
+                        
+                      
+                        </form>
+
+                  </div>
+                    <div class="header__burger"><span class="burger__pol"></span></div>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+
+    <!-- main весь контент -->
+    <main class="diary ">
+      <div class="container-xl">
+        <div class="diary__body">
+          <div class="row">
+            <div class="diary__date col-2"></div>
+            <div class="diary__text offset-1 col-7">
+            <h1 class="text-center">Привет!</h1>
+            <!-- бебр форма  -->
+            <form class="mb-3 container" method="post" action="/addPost">
+              <textarea class="mb-3 form-control col-12 diary__height" placeholder="Напишите здесь что-нибудь"></textarea>
+              <!-- бебр вверху поле для ввода текста в дневник -->
+              <div>
+                <button class="btn btn-success" type="submit">Добавить запись</button>
+                <!-- бебр кнопка для отправки формы -->
+              </div>
+            </form><ul class="diary__list">
+             <div class="diary__backgrond">
+              <h1 class="text-center">Ваши записи</h1>
+              <!-- бебр элемент списка -->
+                <li class="diary__item justify-content-between">
+                  <div class="diary__date">03.10.2022</div>
+                  <div class="diary__text">первая запись Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magnam ea cumque labore ipsum quo, dolore architecto quaerat, rem aspernatur aut debitis quasi! Nulla blanditiis culpa nam repellat quis natus.</div>
+                  <div class="btn-group btn-group-sm"><button class="btn btn-danger">Удалить</button></div>
+                  
+                </li>
+                <!-- бебр  -->
+                <li class="diary__item justify-content-between">
+                  <div class="diary__date">03.10.2022</div>
+                  <div class="diary__text">первая запись Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magnam ea cumque labore ipsum quo, dolore architecto quaerat, rem aspernatur aut debitis quasi! Nulla blanditiis culpa nam repellat quis natus.</div>
+                  <div class="btn-group btn-group-sm"><button class="btn btn-danger">Удалить</button></div>
+                  
+                </li>
+                <li class="diary__item justify-content-between">
+                  <div class="diary__date">03.10.2022</div>
+                  <div class="diary__text">первая запись Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magnam ea cumque labore ipsum quo, dolore architecto quaerat, rem aspernatur aut debitis quasi! Nulla blanditiis culpa nam repellat quis natus.</div>
+                  <div class="btn-group btn-group-sm"><button class="btn btn-danger">Удалить</button></div>
+                  
+                </li>
+             </div>
+
+            </ul>
+          </div>
+          </div>
+
+        </div>
+      </div>
+    </div></main>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+      
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022:
+          <a class="text-white" href="https://mdbootstrap.com/">Web Dev</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+</body>
+<script src="../static/js/bootstrap.bundle.js"></script>
+<script src="../static/js/header.js"></script>
+
+
+</html>
